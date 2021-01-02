@@ -19,6 +19,11 @@ alias l='ls $LS_OPTIONS -lA'
 # alias cp='cp -i'
 # alias mv='mv -i'
 
+# Alias definitions.
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
 # allow more customization by including .bashrc_local if it exists
 if [ -f $HOME/.bashrc_local ]; then
     . $HOME/.bashrc_local
