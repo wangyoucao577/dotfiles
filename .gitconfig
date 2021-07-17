@@ -5,9 +5,11 @@
 	lowSpeedLimit = 0
 	lowSpeedTime = 999999
 [credential]
-	helper = cache --timeout 36000
+	helper = cache --timeout 86400
 [log]
 	decorate = auto
 [user]
 	name = Jay Zhang
 	email = wangyoucao577@gmail.com
+[pull]
+	ff = only
