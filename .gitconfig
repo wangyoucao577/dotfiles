@@ -12,3 +12,5 @@
 	decorate = auto
 [pull]
 	ff = only
+[commit]
+        gpgsign = true
