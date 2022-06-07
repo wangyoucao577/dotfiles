@@ -6,7 +6,6 @@
 set nocompatible    " vi compatible off
 
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " spaces, tabs, line numbers
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -15,6 +14,24 @@ set tabstop=4       " number of visual spaces per TAB
 set softtabstop=4   " numbre of spaces in tab when editing
 set shiftwidth=4    
 set number          " show line numbers
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" indentation rules for FFmpeg: 4 spaces, no tabs
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" set expandtab
+" set shiftwidth=4
+" set softtabstop=4
+set cindent
+set cinoptions=(0
+" Allow tabs in Makefiles.
+autocmd FileType make,automake set noexpandtab shiftwidth=8 softtabstop=8
+" Trailing whitespace and tabs are forbidden, so highlight them.
+highlight ForbiddenWhitespace ctermbg=red guibg=red
+match ForbiddenWhitespace /\s\+$\|\t/
+" Do not highlight spaces at the end of line while typing on that line.
+autocmd InsertEnter * match ForbiddenWhitespace /\t\|\s\+\%#\@<!$/
+
 
 
 
