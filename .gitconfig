@@ -15,8 +15,8 @@
 [commit]
         gpgsign = true
 [sendemail]
-    smtpServer = smtp.gmail.com
-    smtpServerPort = 587
-    smtpEncryption = tls
-    # smtpUser = MY_EMAIL@gmail.com
-    # smtpPass = PASSWORD
+	smtpServer = smtp.gmail.com
+	smtpServerPort = 587
+	smtpEncryption = tls
+	# smtpUser = MY_EMAIL@gmail.com
+	# smtpPass = PASSWORD
