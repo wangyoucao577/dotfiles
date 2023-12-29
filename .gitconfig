@@ -6,6 +6,7 @@
 	sslverify = false
 	lowSpeedLimit = 0
 	lowSpeedTime = 999999
+	postBuffer = 50M
 [credential]
 	helper = cache --timeout 86400
 [log]
@@ -13,7 +14,7 @@
 [pull]
 	ff = only
 [commit]
-        gpgsign = true
+	gpgsign = true
 [sendemail]
 	smtpServer = smtp.gmail.com
 	smtpServerPort = 587
