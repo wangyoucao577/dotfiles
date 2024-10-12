@@ -21,3 +21,5 @@
 	smtpEncryption = tls
 	# smtpUser = MY_EMAIL@gmail.com
 	# smtpPass = PASSWORD
+[init]
+	defaultBranch = main
